@@ -1,0 +1,262 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  background-image: url("/img/bg_img.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 100vh;
+  color: white;
+}
+
+.navbar {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.4rem;
+  background: rgba(0, 0, 0, 0.75);
+}
+#ellipsis {
+  display: none;
+}
+
+.navbar P {
+  margin-left: 5%;
+}
+.nav-menu {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-menu ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+}
+.nav-menu ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.introduction {
+  background: rgba(0, 0, 0, 0.54);
+  width: 100%;
+  height: 90vh;
+  text-align: center;
+}
+.introduction h1 {
+  font-size: 6rem;
+  font-weight: 900;
+  width: 70%;
+  padding-top: 10%;
+  padding-bottom: 4.5%;
+  margin: auto;
+}
+.introduction p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.header-btn {
+  height: 90px;
+  width: 25%;
+  margin: 5% 2%;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: white;
+  background: rgba(0, 0, 0, 0.1);
+  border: 5px solid white;
+  cursor: pointer;
+}
+.header-btn:hover {
+  color: black;
+  background-color: white;
+}
+#title {
+  text-align: center;
+  color: black;
+  font-size: 4.5rem;
+  font-weight: 900;
+  margin-top: 8%;
+  margin-bottom: 8%;
+}
+.main {
+  display: flex;
+  margin-bottom: 26%;
+}
+.services {
+  border: 3px solid black;
+  width: 25%;
+  height: 70vh;
+  margin: auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.services h1 {
+  font-size: 2.5rem;
+  margin-top: 10%;
+}
+.services p {
+  font-size: 1.2rem;
+  line-height: 26px;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.services-btn {
+  height: 90px;
+  width: 70%;
+  margin-bottom: 10%;
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: black;
+  background: white;
+  border: 5px solid black;
+
+  cursor: pointer;
+}
+.services-btn:hover {
+  color: white;
+  background-color: black;
+}
+footer {
+  width: 100%;
+  height: 10vh;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer p {
+  color: white;
+  font-size: 25px;
+  line-height: 30px;
+  margin-right: 4.5%;
+}
+.logos {
+  width: 20%;
+  margin-left: 4.5%;
+  display: flex;
+  justify-content: space-between;
+}
+.fa-instagram {
+  color: #c13584;
+  font-size: 29px;
+}
+.fa-linkedin-in {
+  color: #2867b2;
+  width: 26px;
+  height: 26px;
+  padding: 3px;
+  border: 3px solid #2867b2;
+  border-radius: 8px;
+}
+.fa-twitter {
+  color: #1da1f2;
+  font-size: 29px;
+}
+
+@media (max-width: 1025px) {
+  .nav-menu {
+    width: 60%;
+  }
+}
+@media (max-width: 769px) {
+  header {
+    background-position: top right;
+  }
+  .nav-menu {
+    display: none;
+  }
+  #ellipsis {
+    display: block;
+    font-size: 52px;
+    margin-right: 5%;
+  }
+
+  .introduction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .introduction h1 {
+    font-size: 2.5rem;
+    margin: 10% auto;
+  }
+  .introduction p {
+    font-size: 1.2rem;
+    margin-bottom: 8%;
+  }
+  .header-btn {
+    width: 60%;
+    font-size: 1.3rem;
+  }
+
+  #title {
+    font-size: 2.2rem;
+    margin-top: 25%;
+  }
+  .main {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .services {
+    width: 80%;
+    height: auto;
+    margin-top: 20%;
+  }
+  .services h1 {
+    font-size: 1.8rem;
+  }
+  .services p {
+    font-size: 1rem;
+    line-height: 26px;
+    margin-top: 15%;
+    margin-bottom: 15%;
+  }
+
+  .services-btn {
+    font-size: 1.3rem;
+  }
+  footer {
+    height: 15vh;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  footer p {
+    margin-bottom: 30px;
+  }
+  .logos {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    margin-top: 15px;
+    margin: auto;
+  }
+  .fab:nth-child(1) {
+    order: 3;
+  }
+  .fab:nth-child(2) {
+    order: 2;
+  }
+  .fab:nth-child(3) {
+    order: 1;
+  }
+}
